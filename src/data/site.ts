@@ -53,6 +53,12 @@ export const projects: Entry[] = [
     description: "VFX-Kurzfilm in Night City – Medienproduktion an der FH Südwestfalen.",
     href: "/projects/fragmented-trust",
   },
+  {
+    title: "SCN2A Germany e.V. Imagefilm",
+    meta: "2024",
+    description: "Imagefilm für den Verein SCN2A Germany e.V. – verantwortlich für einen Großteil der Videoaufnahmen.",
+    href: "/projects/scn2a-imagefilm",
+  },
 ];
 
 export const work = [

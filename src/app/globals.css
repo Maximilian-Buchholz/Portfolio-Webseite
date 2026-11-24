@@ -54,3 +54,7 @@ body {
   * { transition: none !important; }
   .theme-transition, .theme-transition * { transition: none !important; }
 }
+
+@keyframes bgfade {
+  from { opacity: 0; }
+}
