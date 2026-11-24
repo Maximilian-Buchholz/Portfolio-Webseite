@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/data/site";
 import ThemeToggle from "./ThemeToggle";
@@ -9,9 +10,9 @@ export default function Header() {
         <Link
           href="/"
           aria-label="Start"
-          className="grid size-10 place-items-center rounded-full bg-card text-xs font-semibold ring-1 ring-border"
+          className="relative size-10 overflow-hidden rounded-full bg-card ring-1 ring-border"
         >
-          {site.initials}
+          <Image src={site.avatar} alt={site.name} fill sizes="40px" className="object-cover" priority />
         </Link>
         <nav aria-label="Hauptnavigation" className="flex gap-6 text-sm font-medium">
           {site.nav.map((n) => (

@@ -2,6 +2,7 @@
 export const site = {
   name: "Maximilian Buchholz",
   initials: "MB",
+  avatar: "/photos/avatar.jpg",
   headline: "Ich baue Dinge und teile den Weg dorthin.",
   intro:
     "[Beruf/Rolle] aus [Stadt]. Aktuell arbeite ich an [Projektname]. Hier schreibe ich über meine Arbeit und Ideen.",
@@ -35,6 +36,10 @@ export const projects: Entry[] = [
 ];
 
 export const work = [
-  { company: "Firma A", role: "Position", period: "2023 – heute" },
-  { company: "Firma B", role: "Position", period: "2020 – 2023" },
+  { role: "Student – Medieninformatik", org: "Fachhochschule Südwestfalen", period: "2022 – heute", logo: "/resumee/fhswf-logo.jpeg" },
+  { role: "Videoeditor – YouTube (Daniel Korte)", org: "Rocket Up GmbH", period: "2021 – heute", logo: "/resumee/rup-logo.png" },
+  { role: "Student – Praktische Informatik", org: "Fachhochschule Dortmund", period: "2021 – 2022", logo: "/resumee/fhdo-logo.png" },
+  { role: "Zerspanungsmechaniker", org: "ROSEN Group", period: "01.2021 – 07.2021", logo: "/resumee/rosen-logo.png" },
+  { role: "Ausbildung – Zerspanungsmechaniker", org: "ROSEN Group", period: "2018 – 2021", logo: "/resumee/rosen-logo.png" },
+  { role: "Allgemeine Hochschulreife", org: "BBS Wirtschaft Lingen", period: "2014 – 2017", logo: "/resumee/bbswi-logo.png" },
 ];

@@ -1,8 +1,18 @@
+import Image from "next/image";
 import { site } from "@/data/site";
 
 export default function Hero() {
   return (
     <section className="pt-16 pb-8">
+      <Image
+        src={site.avatar}
+        alt={`Porträt von ${site.name}`}
+        width={96}
+        height={96}
+        sizes="96px"
+        className="mb-6 size-24 rounded-full object-cover ring-1 ring-border"
+        priority
+      />
       <h1 className="text-balance text-4xl leading-[1.1] font-semibold tracking-tight sm:text-5xl">
         {site.headline}
       </h1>
