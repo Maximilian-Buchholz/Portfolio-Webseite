@@ -2,7 +2,11 @@
 
 export default function ThemeToggle() {
   function toggle() {
-    const dark = document.documentElement.classList.toggle("dark");
+    const root = document.documentElement;
+    // Weicher Farbwechsel: Übergänge nur während des Umschaltens aktiv.
+    root.classList.add("theme-transition");
+    window.setTimeout(() => root.classList.remove("theme-transition"), 400);
+    const dark = root.classList.toggle("dark");
     try {
       localStorage.setItem("theme", dark ? "dark" : "light");
     } catch {}

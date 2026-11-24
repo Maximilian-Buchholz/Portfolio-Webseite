@@ -1,10 +1,11 @@
 import type { Entry } from "@/data/site";
 
 export default function EntryList({ title, entries }: { title: string; entries: Entry[] }) {
+  if (entries.length === 0) return null;
   return (
-    <section className="mt-16">
-      <h2 className="mb-4 text-xs font-semibold tracking-widest text-muted uppercase">{title}</h2>
-      <ul>
+    <section className="mt-16 rounded-2xl border border-border p-6 sm:p-8">
+      <h2 className="mb-2 text-lg font-semibold">{title}</h2>
+      <ul className="divide-y divide-border">
         {entries.map((e) => (
           <li key={e.title}>
             <a

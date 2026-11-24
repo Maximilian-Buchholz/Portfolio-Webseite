@@ -8,7 +8,11 @@ export default function Projects() {
   return (
     <div className="pt-12">
       <h1 className="text-4xl font-semibold tracking-tight">Projekte</h1>
-      <EntryList title="Alle Projekte" entries={projects} />
+      {projects.length === 0 ? (
+        <p className="mt-5 text-lg text-muted">Hier erscheinen bald meine Projekte.</p>
+      ) : (
+        <EntryList title="Alle Projekte" entries={projects} />
+      )}
     </div>
   );
 }

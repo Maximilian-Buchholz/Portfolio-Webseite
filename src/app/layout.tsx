@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className="min-h-screen font-sans">
+      <body className="min-h-screen overflow-x-clip font-sans">
         <Header />
         <main className="mx-auto max-w-2xl px-5">{children}</main>
         <Footer />
