@@ -10,7 +10,7 @@ export const site = {
   email: "deine@email.de",
   socials: [
     { label: "GitHub", href: "https://github.com/Maximilian-Buchholz" },
-    { label: "LinkedIn", href: "#" }, // TODO: LinkedIn-Profil-URL eintragen
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/maximilian-buchholz-3a4013452/" },
   ],
   nav: [
     { label: "Über mich", href: "/about" },
@@ -38,25 +38,25 @@ export const projects: Entry[] = [
   {
     title: "PlanWerk",
     meta: "2026",
-    description: "Projektmanagement in Phasen. Projekte, Aufgaben, Kalender und Team in einer App.",
+    description: "[PROTOTYP] Projektmanagement-App mit lokalem KI-Assistenten ",
     href: "/planwerk",
   },
   {
     title: "ScanChef",
     meta: "2025",
-    description: "iOS-App für Vorräte und Rezepte mit Barcode-Scanner – Medienprojekt an der FH Südwestfalen.",
+    description: "[MVP] iOS-App für Vorräte und Rezepte mit Barcode-Scanner",
     href: "/projects/scanchef",
   },
   {
     title: "Fragmented Trust",
     meta: "2024/25",
-    description: "VFX-Kurzfilm in Night City – Medienproduktion an der FH Südwestfalen.",
+    description: "VFX-Kurzfilm in Night City",
     href: "/projects/fragmented-trust",
   },
   {
     title: "SCN2A Germany e.V. Imagefilm",
     meta: "2024",
-    description: "Imagefilm für den Verein SCN2A Germany e.V. – verantwortlich für einen Großteil der Videoaufnahmen.",
+    description: "verantwortlich für einen Großteil der Videoaufnahmen.",
     href: "/projects/scn2a-imagefilm",
   },
 ];

@@ -3,7 +3,6 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import PhotoBackground from "@/components/PhotoBackground";
 import { site } from "@/data/site";
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
@@ -23,7 +22,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className="pointer-events-none relative min-h-screen overflow-x-clip font-sans">
-        <PhotoBackground />
         <Header />
         <main className="pointer-events-auto mx-auto max-w-2xl px-5">{children}</main>
         <Footer />
